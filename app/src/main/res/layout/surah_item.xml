@@ -44,11 +44,12 @@
             android:fontFamily="@font/amiri_bold"
             android:gravity="center"
             android:textColor="@color/surah_name"
-            android:textSize="30sp"
+            android:textSize="32sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/vguideline5"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="الفاتحه" />
+            app:layout_constraintBaseline_toBaselineOf="@id/surah_num"
+            tools:text="آال عمران" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/vguideline1"
