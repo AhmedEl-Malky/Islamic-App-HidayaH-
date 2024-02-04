@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.Fragments.QuranContenFragment">
+    tools:context=".UI.Activities.SurahActivity">
 
     <ImageView
         android:id="@+id/surahCover"
@@ -36,19 +36,29 @@
         app:layout_constraintStart_toStartOf="@+id/surahCover"
         app:layout_constraintTop_toTopOf="@+id/hguideline1" />
 
+    <ImageView
+        android:id="@+id/surrah_back_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/vguideline4"
+        app:layout_constraintStart_toStartOf="@+id/vguideline3"
+        app:layout_constraintTop_toTopOf="@+id/hguideline1" />
+
     <TextView
         android:id="@+id/surahName"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:fontFamily="@font/amiri_italic"
+        android:fontFamily="@font/quraan"
         android:gravity="center"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/separatorLine"
         app:layout_constraintEnd_toStartOf="@+id/vguideline2"
         app:layout_constraintStart_toStartOf="@+id/vguideline1"
         app:layout_constraintTop_toTopOf="@+id/hguideline1"
-        tools:text="سورة الفاتحة" />
+        tools:text="سورة محمد" />
 
     <TextView
         android:id="@+id/surahContent"
@@ -85,6 +95,20 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vguideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vguideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
