@@ -12,8 +12,7 @@ class SurahFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var binder =
-            return inflater.inflate(R.layout.fragment_surah, container, false)
+        return inflater.inflate(R.layout.fragment_surah, container, false)
     }
 
 }
