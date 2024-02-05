@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.Fragments.Sib7aFragment">
+    tools:context=".UI.Fragments.QuranContentFragment">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/surah_content_img"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/sib7a_img"
+        android:src="@drawable/quran_content"
         app:layout_constraintBottom_toTopOf="@+id/hguideline1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -22,56 +22,52 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:fontFamily="@font/quraan"
+        android:fontFamily="@font/inter_regular"
         android:gravity="center"
-        android:text="تسبيح"
+        android:text="Last Read"
         android:textColor="@color/white"
-        android:textSize="44sp"
-        app:layout_constraintBottom_toTopOf="@+id/hguideline2"
-        app:layout_constraintEnd_toStartOf="@+id/vguideline1"
-        app:layout_constraintStart_toStartOf="@+id/vguideline2"
-        app:layout_constraintTop_toTopOf="@+id/hguideline3" />
-
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/hguideline3"
+        app:layout_constraintEnd_toStartOf="@+id/vguideline3"
+        app:layout_constraintStart_toStartOf="@+id/vguideline1"
+        app:layout_constraintTop_toTopOf="@+id/hguideline2" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/last_surah"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/tasbi7_background"
+        android:layout_height="0dp"
         android:fontFamily="@font/quraan"
         android:gravity="center"
-        android:paddingHorizontal="8dp"
+        android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/vguideline3"
-        app:layout_constraintStart_toStartOf="@+id/vguideline2"
-        app:layout_constraintTop_toTopOf="@+id/hguideline4"
-        tools:text="اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ" />
+        app:layout_constraintBottom_toTopOf="@+id/hguideline4"
+        app:layout_constraintEnd_toStartOf="@id/vguideline3"
+        app:layout_constraintStart_toStartOf="@+id/vguideline1"
+        app:layout_constraintTop_toTopOf="@+id/hguideline3"
+        tools:text="آل عمران" />
 
     <Button
-        android:id="@+id/tasbi7_btn"
+        android:id="@+id/continue_btn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/tasbi7_counter_shape"
-        android:text="33"
-        android:textColor="@color/white"
-        android:textSize="32sp"
+        android:background="@drawable/continue_reading_selector"
+        android:text="Continue"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/hguideline6"
-        app:layout_constraintEnd_toStartOf="@+id/vguideline4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/vguideline5"
-        app:layout_constraintTop_toTopOf="@+id/hguideline7"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toStartOf="@+id/vguideline3"
+        app:layout_constraintStart_toStartOf="@+id/vguideline1"
+        app:layout_constraintTop_toTopOf="@+id/hguideline5" />
 
-    <ImageView
-        android:id="@+id/pulse_anim"
-        android:layout_width="0dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quran_content_recycler"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="1:1"
-        android:background="@drawable/tasbi7_counter_pulse"
-        app:layout_constraintBottom_toTopOf="@+id/hguideline6"
-        app:layout_constraintEnd_toStartOf="@+id/vguideline4"
-        app:layout_constraintStart_toStartOf="@+id/vguideline5"
-        app:layout_constraintTop_toTopOf="@+id/hguideline7" />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surah_content_img"
+        tools:listitem="@layout/surah_item" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hguideline1"
@@ -85,77 +81,70 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.14" />
+        app:layout_constraintGuide_percent="0.01" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hguideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.02" />
+        app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hguideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.19" />
+        app:layout_constraintGuide_percent="0.11" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hguideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.54" />
+        app:layout_constraintGuide_percent="0.12" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hguideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.84" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/hguideline7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.58" />
+        app:layout_constraintGuide_percent="0.17" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vguideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.6" />
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vguideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05" />
+        app:layout_constraintGuide_percent="0.3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vguideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95" />
+        app:layout_constraintGuide_percent="0.35" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vguideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.74" />
+        app:layout_constraintGuide_percent="0.38" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vguideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.26" />
+        app:layout_constraintGuide_percent="0.38" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
