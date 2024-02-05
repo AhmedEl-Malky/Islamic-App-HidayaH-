@@ -54,13 +54,12 @@
         android:background="@drawable/tasbi7_counter_shape"
         android:text="33"
         android:textColor="@color/white"
-        android:textSize="32sp"
+        android:textSize="38sp"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintBottom_toTopOf="@+id/hguideline6"
         app:layout_constraintEnd_toStartOf="@+id/vguideline4"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/vguideline5"
-        app:layout_constraintTop_toTopOf="@+id/hguideline7"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/hguideline7" />
 
     <ImageView
         android:id="@+id/pulse_anim"

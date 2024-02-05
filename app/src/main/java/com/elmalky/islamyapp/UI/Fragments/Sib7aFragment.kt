@@ -39,7 +39,7 @@ class Sib7aFragment : Fragment() {
 
     private var runnable = object : Runnable {
         override fun run() {
-            binder.pulseAnim.animate().scaleX(2f).scaleY(2f).alpha(0f).setDuration(600)
+            binder.pulseAnim.animate().scaleX(1.5f).scaleY(1.5f).alpha(0f).setDuration(600)
                 .withEndAction {
                     binder.pulseAnim.scaleX = 1f
                     binder.pulseAnim.scaleY = 1f
