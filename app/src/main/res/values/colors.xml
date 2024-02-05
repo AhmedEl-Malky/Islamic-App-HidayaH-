@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="Ayaat_color">#004B40</color>
+    <color name="surah_name">#076C58</color>
+    <color name="light_green">#87D1A4</color>
+    <color name="dark_green">#006754</color>
+    <color name="offwhite">#FAF6EB</color>
 </resources>
