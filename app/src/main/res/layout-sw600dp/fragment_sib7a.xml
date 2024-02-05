@@ -41,7 +41,7 @@
         android:fontFamily="@font/quraan"
         android:gravity="center"
         android:paddingHorizontal="8dp"
-        android:textSize="33sp"
+        android:textSize="26sp"
         app:layout_constraintEnd_toStartOf="@+id/vguideline3"
         app:layout_constraintStart_toStartOf="@+id/vguideline2"
         app:layout_constraintTop_toTopOf="@+id/hguideline4"
@@ -54,11 +54,10 @@
         android:background="@drawable/tasbi7_counter_shape"
         android:text="33"
         android:textColor="@color/white"
-        android:textSize="32sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/hguideline6"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/vguideline4"
-
         app:layout_constraintStart_toStartOf="@+id/vguideline5"
         app:layout_constraintTop_toTopOf="@+id/hguideline7" />
 
