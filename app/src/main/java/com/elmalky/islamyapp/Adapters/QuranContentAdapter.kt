@@ -8,8 +8,8 @@ import com.elmalky.islamyapp.Interfaces.SurahItemInteractions
 import com.elmalky.islamyapp.R
 import com.elmalky.islamyapp.databinding.SurahItemBinding
 
-class QuranContentAdapter(val quranContent: List<String>) :
-    RecyclerView.Adapter<QuranContentAdapter.SurahItemHolder>(), SurahItemInteractions {
+class QuranContentAdapter(val quranContent: List<String>, val listener: SurahItemInteractions) :
+    RecyclerView.Adapter<QuranContentAdapter.SurahItemHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SurahItemHolder {
         var view = LayoutInflater.from(parent.context).inflate(R.layout.surah_item, parent, false)
         return SurahItemHolder(view)
@@ -21,14 +21,13 @@ class QuranContentAdapter(val quranContent: List<String>) :
         holder.binder.apply {
             surahName.text = quranContent[position]
             surahNum.text = (position + 1).toString()
+            root.setOnClickListener {
+                listener.onItemClickListener(position)
+            }
         }
     }
 
     class SurahItemHolder(view: View) : RecyclerView.ViewHolder(view) {
         val binder = SurahItemBinding.bind(view)
-    }
-
-    override fun onItemClickListener(position: Int) {
-
     }
 }

@@ -1,5 +1,6 @@
 package com.elmalky.islamyapp.Util
 
+import com.elmalky.islamyapp.UI.Activities.MainActivity
 import com.elmalky.islamyapp.UI.Fragments.AzkarFragment
 import com.elmalky.islamyapp.UI.Fragments.QuranContentFragment
 import com.elmalky.islamyapp.UI.Fragments.RadioFragment
@@ -13,6 +14,10 @@ object Constants {
         val sib7aFragment = Sib7aFragment()
         val azkarFragment = AzkarFragment()
         val radioFragment = RadioFragment()
+    }
+
+    object Activities {
+        val mainActivity = MainActivity()
     }
 
     object Content {
@@ -313,6 +318,10 @@ object Constants {
             "الفلق",
             "الناس"
         )
+    }
 
+    object Names {
+        const val SURAH_NUM = "surah_num"
+        const val SURAH_NAME = "surah_name"
     }
 }
