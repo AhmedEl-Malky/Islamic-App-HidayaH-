@@ -51,7 +51,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/continue_reading_selector"
-        android:text="Continue"
+        android:text="استكمال"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/hguideline6"
         app:layout_constraintEnd_toStartOf="@+id/vguideline3"
