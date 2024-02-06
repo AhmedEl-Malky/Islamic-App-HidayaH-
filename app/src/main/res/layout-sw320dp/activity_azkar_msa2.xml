@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.Activities.AzkarSaba7Activity">
+    tools:context=".UI.Activities.AzkarMsa2Activity">
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/azkar_saba7_background"
+        android:src="@drawable/azkar_msa2_background"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:layout_height="0dp"
         android:fontFamily="@font/quraan"
         android:gravity="center"
-        android:text="أذكار الصباح"
+        android:text="أذكار المساء"
         android:textColor="@color/white"
         android:textSize="44sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
@@ -84,5 +84,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.02" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
