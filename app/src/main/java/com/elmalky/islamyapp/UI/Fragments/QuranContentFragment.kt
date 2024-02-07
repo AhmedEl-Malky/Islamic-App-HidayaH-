@@ -24,14 +24,14 @@ class QuranContentFragment : Fragment(), SurahItemInteractions {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val adapter = QuranContentAdapter(Constants.Content.quranContent, this)
+        val adapter = QuranContentAdapter(Constants.DataManager.quranContent, this)
         binder.quranContentRecycler.adapter = adapter
     }
 
     override fun onItemClickListener(position: Int) {
         var intent = Intent(activity, SurahActivity::class.java)
         intent.putExtra(Constants.Names.SURAH_NUM, position + 1)
-        intent.putExtra(Constants.Names.SURAH_NAME, Constants.Content.surahName[position])
+        intent.putExtra(Constants.Names.SURAH_NAME, Constants.DataManager.surahName[position])
         startActivity(intent)
     }
 
