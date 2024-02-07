@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.elmalky.islamyapp.Util.Constants
 import com.elmalky.islamyapp.databinding.FragmentSib7aBinding
 
 
@@ -21,11 +22,27 @@ class Sib7aFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        binder.tasbi7Btn.setOnClickListener {
-            startPulse()
-            stopPulse()
-//            TODO("Counter Functionality")
+        var index = 0
+        var tasbi7 = Constants.DataManager.tasbi7
+        binder.tasbi7Content.text = tasbi7.entries.elementAt(index).key
+        var counter = tasbi7.entries.elementAt(index).value
+        binder.tasbi7Btn.text = counter.toString()
+        binder.apply {
+            tasbi7Btn.setOnClickListener {
+                startPulse()
+                stopPulse()
+                counter--
+                tasbi7Btn.text = counter.toString()
+                if (counter == 0) {
+                    if (index == Constants.DataManager.tasbi7.size - 1)
+                        index = 0
+                    else
+                        index++
+                    binder.tasbi7Content.text = tasbi7.entries.elementAt(index).key
+                    counter = tasbi7.entries.elementAt(index).value
+                    binder.tasbi7Btn.text = counter.toString()
+                }
+            }
         }
     }
 
