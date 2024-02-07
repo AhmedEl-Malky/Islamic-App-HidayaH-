@@ -34,14 +34,14 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tasbi7_content"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/tasbi7_background"
         android:fontFamily="@font/quraan"
         android:gravity="center"
-        android:paddingHorizontal="8dp"
-        android:textSize="26sp"
+        android:padding="8dp"
+        android:textSize="28sp"
         app:layout_constraintEnd_toStartOf="@+id/vguideline3"
         app:layout_constraintStart_toStartOf="@+id/vguideline2"
         app:layout_constraintTop_toTopOf="@+id/hguideline4"
