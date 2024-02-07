@@ -21,7 +21,7 @@
             android:fontFamily="@font/inter_regular"
             android:gravity="center"
             android:padding="16dp"
-            android:textSize="24sp"
+            android:textSize="26sp"
             android:textColor="@color/Ayaat_color"
             app:layout_constraintBottom_toTopOf="@+id/azkar_counter"
             app:layout_constraintEnd_toEndOf="parent"
