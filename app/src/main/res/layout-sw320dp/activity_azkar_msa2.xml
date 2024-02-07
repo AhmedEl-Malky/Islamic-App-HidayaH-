@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/azkar_saba7_back_btn"
+        android:id="@+id/azkar_msa2_back_btn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/arrow_left"
@@ -41,13 +41,15 @@
         app:layout_constraintTop_toTopOf="@+id/hguideline2" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/azkar_saba7_RecyclerView"
+        android:id="@+id/azkar_msa2_RecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/azkar_item" />
 
     <androidx.constraintlayout.widget.Guideline

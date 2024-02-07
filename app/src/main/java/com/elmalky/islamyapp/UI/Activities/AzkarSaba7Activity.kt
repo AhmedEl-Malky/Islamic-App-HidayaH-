@@ -24,7 +24,7 @@ class AzkarSaba7Activity : AppCompatActivity(), AzkarItemInteractions {
     }
 
     override fun onItemDeleteListener(position: Int) {
-        Constants.DataManager.deleteAzkarAt(position)
+        Constants.DataManager.deleteAzkarSaba7At(position)
         adapter.updateData(Constants.DataManager.azkarSaba7)
     }
 }
