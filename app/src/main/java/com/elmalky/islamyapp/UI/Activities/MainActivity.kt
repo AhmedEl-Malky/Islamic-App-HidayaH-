@@ -26,6 +26,31 @@ class MainActivity : AppCompatActivity() {
                 super.onPageSelected(position)
             }
         })
+        binder.mainBottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.quran_fragment -> {
+                    binder.myViewPager.currentItem = 0
+                    true
+                }
+
+                R.id.sib7a_fragment -> {
+                    binder.myViewPager.currentItem = 1
+                    true
+                }
+
+                R.id.azkar_fragment -> {
+                    binder.myViewPager.currentItem = 2
+                    true
+                }
+
+                R.id.radio_fragment -> {
+                    binder.myViewPager.currentItem = 3
+                    true
+                }
+
+                else -> false
+            }
+        }
     }
 
     private fun initViewPager() {
