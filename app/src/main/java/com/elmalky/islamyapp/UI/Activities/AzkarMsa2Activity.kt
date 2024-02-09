@@ -1,6 +1,7 @@
 package com.elmalky.islamyapp.UI.Activities
 
 import android.os.Bundle
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.elmalky.islamyapp.Adapters.AzkarMsa2Adapter
 import com.elmalky.islamyapp.Interfaces.AzkarItemInteractions
@@ -11,6 +12,10 @@ class AzkarMsa2Activity : AppCompatActivity(), AzkarItemInteractions {
     lateinit var adapter: AzkarMsa2Adapter
     lateinit var binder: ActivityAzkarMsa2Binding
     override fun onCreate(savedInstanceState: Bundle?) {
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        )
         super.onCreate(savedInstanceState)
         binder = ActivityAzkarMsa2Binding.inflate(layoutInflater)
         setContentView(binder.root)
