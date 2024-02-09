@@ -26,7 +26,7 @@
         android:gravity="center"
         android:text="تسبيح"
         android:textColor="@color/white"
-        android:textSize="52sp"
+        android:textSize="@dimen/_32sdp"
         app:layout_constraintBottom_toTopOf="@+id/hguideline2"
         app:layout_constraintEnd_toStartOf="@+id/vguideline1"
         app:layout_constraintStart_toStartOf="@+id/vguideline2"
@@ -40,8 +40,8 @@
         android:background="@drawable/tasbi7_background"
         android:fontFamily="@font/quraan"
         android:gravity="center"
-        android:padding="8dp"
-        android:textSize="28sp"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_18sdp"
         app:layout_constraintEnd_toStartOf="@+id/vguideline3"
         app:layout_constraintStart_toStartOf="@+id/vguideline2"
         app:layout_constraintTop_toTopOf="@+id/hguideline4"
@@ -54,7 +54,7 @@
         android:background="@drawable/tasbi7_counter_shape"
         android:text="33"
         android:textColor="@color/white"
-        android:textSize="44sp"
+        android:textSize="@dimen/_38sdp"
         app:layout_constraintBottom_toTopOf="@+id/hguideline6"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/vguideline4"
@@ -119,7 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.58" />
+        app:layout_constraintGuide_percent="0.63" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vguideline1"
