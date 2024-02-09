@@ -19,7 +19,7 @@ class AzkarSaba7Activity : AppCompatActivity(), AzkarItemInteractions {
         super.onCreate(savedInstanceState)
         binder = ActivityAzkarSaba7Binding.inflate(layoutInflater)
         setContentView(binder.root)
-        adapter = AzkarSaba7Adapter(Constants.DataManager.azkarSaba7, this)
+        adapter = AzkarSaba7Adapter(Constants.DataManager.azkarSaba7m, this)
         binder.apply {
             azkarSaba7BackBtn.setOnClickListener {
                 finish()
