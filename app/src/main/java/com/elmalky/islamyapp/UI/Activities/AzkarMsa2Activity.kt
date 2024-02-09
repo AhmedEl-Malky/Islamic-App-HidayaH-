@@ -14,7 +14,7 @@ class AzkarMsa2Activity : AppCompatActivity(), AzkarItemInteractions {
         super.onCreate(savedInstanceState)
         binder = ActivityAzkarMsa2Binding.inflate(layoutInflater)
         setContentView(binder.root)
-        adapter = AzkarMsa2Adapter(Constants.DataManager.azkarMsa2, this)
+        adapter = AzkarMsa2Adapter(Constants.DataManager.azkarMsa2m, this)
         binder.apply {
             azkarMsa2BackBtn.setOnClickListener {
                 finish()
