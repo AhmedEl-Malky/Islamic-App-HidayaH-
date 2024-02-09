@@ -46,7 +46,7 @@
         android:gravity="center"
         android:text="إذاعة القرآن الكريم"
         android:textColor="@color/white"
-        android:textSize="28sp"
+        android:textSize="@dimen/_24sdp"
         app:layout_constraintBottom_toTopOf="@+id/hguideline4"
         app:layout_constraintEnd_toStartOf="@+id/vguideline3"
         app:layout_constraintStart_toStartOf="@+id/vguideline4"
