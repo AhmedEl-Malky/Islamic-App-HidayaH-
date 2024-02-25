@@ -8,6 +8,10 @@
 
     </style>
 
+    <style name="splash_screen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
     <style name="Theme.IslamyApp" parent="Base.Theme.IslamyApp" />
 
 </resources>
