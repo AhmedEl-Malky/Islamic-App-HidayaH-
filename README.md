@@ -1,2 +1,2 @@
 # Islamic app "HidayaH"
-Islamy is a daily use application for every muslim , including Holy Quraan
+Islamy is a daily use application for every muslim , including Holy Quraan , azkar , tasbeeh , radio
